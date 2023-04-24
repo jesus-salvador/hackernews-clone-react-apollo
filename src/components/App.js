@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from './../logo.svg';
 import './../styles/App.css';
+import CreateLink from './CreateLink';
 import LinkList from './LinkList';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <CreateLink />
         <LinkList />
       </header>
       <footer>
