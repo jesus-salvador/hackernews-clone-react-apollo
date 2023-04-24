@@ -1,14 +1,16 @@
+import React from 'react'
 import logo from './../logo.svg';
 import './../styles/App.css';
+import LinkList from './LinkList';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/components/App.js</code> and save to reload.
-        </p>
+        <LinkList />
+      </header>
+      <footer>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -17,7 +19,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </footer>
     </div>
   );
 }
