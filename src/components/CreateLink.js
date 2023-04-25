@@ -42,7 +42,7 @@ const CreateLink = () => {
                     }
                 }
             })
-        }
+        },
         onCompleted: () => navigate('/'),
     });
 
