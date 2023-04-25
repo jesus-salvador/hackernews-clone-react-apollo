@@ -17,6 +17,11 @@ input {
   max-width: 500px;
 }
 
+footer {
+  text-align: center;
+  height: 10vmin;
+}
+
 .gray {
   color: #828282;
 }

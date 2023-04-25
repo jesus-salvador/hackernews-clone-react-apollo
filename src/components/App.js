@@ -15,7 +15,7 @@ function App() {
         <div className='w85'>
           <Header />
         </div>
-        <div className='ph3 pv1 white-gray'>
+        <div className='ph3 pv1 white-gray w85'>
           <Routes>
             <Route
               path='/'
