@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import logo from './../logo.svg';
 import './../styles/App.css';
 import CreateLink from './CreateLink';
@@ -20,7 +20,7 @@ function App() {
           <Routes>
             <Route
               path='/'
-              element={<LinkList/>}
+              element={<Navigate replace to='/new/1' />}
             />
             <Route
               path='/create'
@@ -33,6 +33,14 @@ function App() {
             <Route
               path='/search'
               element={<Search/>}
+            />
+            <Route
+              path='/top'
+              element={<LinkList/>}
+            />
+            <Route
+              path='/new/:page'
+              element={<LinkList/>}
             />
           </Routes>
         </div>

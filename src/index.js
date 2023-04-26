@@ -5,7 +5,6 @@ import {
   ApolloProvider,
   ApolloClient,
   createHttpLink,
-  InMemoryCache,
   split,
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context'
@@ -14,6 +13,7 @@ import { getMainDefinition } from '@apollo/client/utilities'
 import './styles/index.css';
 import App from './components/App';
 import { AUTH_TOKEN } from './constants';
+import { cache } from './cache';
 import reportWebVitals from './reportWebVitals';
 
 const httpLink = createHttpLink({
@@ -54,7 +54,7 @@ const link = split(
 
 const client = new ApolloClient({
   link,
-  cache: new InMemoryCache()
+  cache: cache
 });
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

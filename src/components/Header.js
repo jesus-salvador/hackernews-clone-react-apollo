@@ -8,14 +8,18 @@ const Header = () => {
 
     return (
         <div className='flex pal justify-between nowrap orange'>
-            <div className='flex flex-fixed black'>
+            <div className='flex flex-fixed black pv1 ph1'>
                 <Link to='/' className='no-underline black'>
-                    <div className='fw7 mr1'>Hacker News</div>
+                    <div className='fw7 mr2'>Hacker News</div>
                 </Link>
                 <Link to='/' className='no-underline black'>
                     new
                 </Link>
-                <div className='ml1'>|</div>
+                <div className='ml2'>|</div>
+                <Link to='/top' className='ml1 no-underline black'>
+                    top
+                </Link>
+                <div className='ml2'>|</div>
                 <Link
                     to="/search"
                     className="ml1 no-underline black"
@@ -34,7 +38,7 @@ const Header = () => {
                     </div>
                 )}
             </div>
-            <div className="flex flex-fixed">
+            <div className="flex flex-fixed pv1 pr1">
                 {authToken ? (
                     <div
                         className="ml1 pointer black"
