@@ -45,7 +45,7 @@ const Login = () => {
             password: formState.password,
         },
         onCompleted: ({ login }) => {
-            localStorage.setItem(AUTH_TOKEN, login.token);
+            sessionStorage.setItem(AUTH_TOKEN, login.token);
             navigate('/');
         }
     });
@@ -57,7 +57,7 @@ const Login = () => {
             password: formState.password,
         },
         onCompleted: ({ signup }) => {
-            localStorage.setItem(AUTH_TOKEN, signup.token);
+            sessionStorage.setItem(AUTH_TOKEN, signup.token);
             navigate('/');
         }
     });

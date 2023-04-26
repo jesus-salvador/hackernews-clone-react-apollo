@@ -4,7 +4,7 @@ import { AUTH_TOKEN } from '../constants';
 
 const Header = () => {
     const navigate = useNavigate();
-    const authToken = localStorage.getItem(AUTH_TOKEN);
+    const authToken = sessionStorage.getItem(AUTH_TOKEN);
 
     return (
         <div className='flex pal justify-between nowrap orange'>

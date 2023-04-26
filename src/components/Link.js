@@ -26,7 +26,7 @@ const VOTE_MUTATION = gql`
 
 const Link = (props) => {
     const { link } = props;
-    const authToken = localStorage.getItem(AUTH_TOKEN);
+    const authToken = sessionStorage.getItem(AUTH_TOKEN);
     const [vote] = useMutation(VOTE_MUTATION, {
         variables: {
             linkId: link.id
